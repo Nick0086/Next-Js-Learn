@@ -28,7 +28,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body >{children}</body>
+      <body >
+        <header className="py-8 px-4 text-lg font-bold text-center border-b-2 border-b-cyan-600" >
+          <h1>Header of Web App</h1>
+        </header>
+        {children}
+        <footer className="py-8 px-4 text-lg font-bold text-center border-t-2 border-t-cyan-600" >
+          <h1>Footer Of Web App</h1>
+        </footer>
+        </body>
     </html>
   );
 }
